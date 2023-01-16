@@ -30,7 +30,6 @@ li {
 }
 
 .container {
-    width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
@@ -155,7 +154,10 @@ header {
 .nav-link1:active, 
 .nav-link2:hover,
 .nav-link2:focus,
-.nav-link2:active{
+.nav-link2:active
+.nav-link3:hover,
+.nav-link3:focus,
+.nav-link3:active{
     color: var(--iris);
 }
 
@@ -180,7 +182,11 @@ header {
 .contact-item:active {
     color: var(--iris);
 }
-
+.menu-svg{
+    width: 32px;
+    height: 22px;
+    stroke: var(--navy-blue);
+}
 /* main */
 /* section1 */
 .section-one {
@@ -198,7 +204,6 @@ header {
     line-height: 1.07;
     color: #FFFFFF;
     margin-bottom: 48px;
-    text-align: center;
     width: 492px;
     margin-left: auto;
     margin-right: auto;
@@ -231,7 +236,7 @@ header {
 }
 
 /* section2 */
-.icon-item-section-two {
+/* .icon-item-section-two {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,10 +277,10 @@ header {
     line-height: 1.2;
     color: var(--navy-blue);
     margin-bottom: 8px;
-}
+} */
 
 /* section3 */
-.section-three {
+/* .section-three {
     padding-bottom: 120px;
 }
 
@@ -296,10 +301,10 @@ header {
 
 .img-list li:not(:last-child) {
     margin-right: 24px;
-}
+} */
 
 /* section4 */
-.section-four {
+/* .section-four {
     background-color: var(--cloud);
     padding: 120px 0;
 }
@@ -363,7 +368,7 @@ height: 16px;
 }
 
 /* section5 */
-.section-five {
+/* .section-five {
     padding: 120px 0;
 }
 
@@ -396,10 +401,10 @@ height: 16px;
 .icon-section-five {
     width: 104px;
     height: 56px;
-}
+}  */
 
 /* footer */
-footer {
+/* footer {
     background-color: var(--navy-blue);
     padding: 100px 0;
     display: flex;
@@ -511,7 +516,7 @@ footer {
 }
 .subscribe-footer form{
     display: flex;
-}
+} */
 /* portfolio */
 .section-portfolio {
     padding-top: 96px;
@@ -849,4 +854,38 @@ height: 12px;
 }
 .checkbox:checked+.checkbox-svg{
     background-color: var(--iris);
+}
+/* phone */
+@media screen and (min-width: 480px) and (max-width: 768px){
+    /* header */
+    .nav-list,
+    .contact-list{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+    .feature-text{
+        max-width: 100%;
+    }
+    .logo-header{
+        padding: 24px 0;
+    }
+    .container{
+        padding: 0 16px;
+    }
+    /* /header */
+    /* section1 */
+    .main-title{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    width: 317px;
+    }
 }
