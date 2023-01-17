@@ -36,9 +36,22 @@
                     <a href="tel:+110001111111" class="contact-item link">+11 (000) 111-11-11</a>
                 </li>
             </ul>
+            <button js-open-menu class="button-menu">
             <svg class="menu-svg">
                 <use href="./images/icons.svg#icon-menu"></use>
             </svg>
+        </button>
+        <div class="modal-menu is-open" js-menu-container>
+            <button class="button-close-modal" js-close-menu>
+            <svg class="close-icon-modal">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg></button>
+            <div class="container-modal-menu">
+                <a class="section-title">Studio</a>
+                <a class="section-title">Portfolio</a>
+                <a class="section-title">Contacts</a>
+            </div>
+        </div>
         </div>
     </header>
     <main>
@@ -331,7 +344,7 @@
         </section>
         <!-- /section4 -->
         <!-- section5 -->
-        <!-- <section class="section-five">
+        <section class="section-five">
             <div class="container">
                 <h2 class="section-title">Customers</h2>
                 <ul class="icon-list-section-five">
@@ -379,10 +392,10 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer>
-        <div class="container container-footer">
+    <footer>
+        <div class="container-footer">
             <div class="footer-box">
                 <a href="./index.html" class="logo-footer link">
                     <span class="web-logo">WEB</span>STUDIO
@@ -437,8 +450,9 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
