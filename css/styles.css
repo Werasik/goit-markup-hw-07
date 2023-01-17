@@ -404,7 +404,7 @@ height: 16px;
     height: 56px;
 } 
 /* footer */
-/* footer {
+footer {
     background-color: var(--navy-blue);
     padding: 100px 0;
     display: flex;
@@ -516,7 +516,7 @@ height: 16px;
 }
 .subscribe-footer form{
     display: flex;
-} */
+}
 /* portfolio */
 .section-portfolio {
     padding-top: 96px;
@@ -718,7 +718,7 @@ a:focus .absolute-portfolio-block {
 
 
 /* form */
-.form>p{
+.subscribe-footer p{
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
@@ -726,7 +726,7 @@ a:focus .absolute-portfolio-block {
     align-items: center;
     justify-content: center;
     margin-bottom: 16px;
-    color: var(--navy-blue);
+    color: #fff;
 }
 .textarea-label{
     margin-bottom: 16px;
@@ -957,5 +957,37 @@ height: 12px;
     }
     .icon-link-section-five{
     width: 190px;
+    }
+    .container-footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .footer-box{
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-social-media{
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .subscribe-footer{
+        margin-right: 0;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .subscribe-footer form{
+        flex-direction: column;
+    }
+    .input-footer{
+        width: 100%;
     }
 }
