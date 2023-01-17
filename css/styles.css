@@ -860,7 +860,8 @@ height: 12px;
     /* header */
     .nav-list,
     .contact-list,
-    .icon-item-section-two{
+    .icon-item-section-two,
+    .section-three{
         position: absolute;
         width: 1px;
         height: 1px;
