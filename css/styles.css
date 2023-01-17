@@ -428,17 +428,16 @@ footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--cloud);
+    margin-bottom: 16px;
 }
 
 .text-footer {
     line-height: 1.5;
     color: var(--cornflower);
-    margin-top: 16px;
 }
 
 .icon-list-footer {
     display: flex;
-    margin-top: 16px;
 }
 
 .p-footer-icons {
@@ -723,9 +722,7 @@ a:focus .absolute-portfolio-block {
     font-size: 16px;
     line-height: 1.5;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 16px;
     color: #fff;
 }
 .textarea-label{
@@ -878,6 +875,7 @@ height: 12px;
     }
     .container{
         padding: 0 16px;
+        width: 100%;
     }
     /* section1 */
     .main-title{
@@ -942,22 +940,19 @@ height: 12px;
     .icon-list-section-five{
         flex-wrap: wrap;
         justify-content: center;
+        column-gap: 16px;
+        row-gap: 72px;
     }
     .icon-item-section-five{
         width: 190px;
     }
-    .icon-item-section-five:nth-child(-n+4){
-        margin-bottom: 72px;
-    }
     .icon-item-section-five:not(:last-child){
         margin-right: 0;
-    }
-    .icon-item-section-five:nth-child(odd){
-        margin-right: 16px;
     }
     .icon-link-section-five{
     width: 190px;
     }
+    /* footer */
     .container-footer{
     flex-direction: column;
     justify-content: center;
@@ -969,6 +964,7 @@ height: 12px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 72px;
     }
     .footer-social-media{
         margin-right: 0;
@@ -976,18 +972,30 @@ height: 12px;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 72px;
     }
     .subscribe-footer{
         margin-right: 0;
-        display: block;
+        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        width: 100%;
     }
     .subscribe-footer form{
-        flex-direction: column;
+        flex-direction: column;    
+        align-items: center;
+        width: 100%;
+    }
+    .p-footer-icons{
+        margin-bottom: 16px;
+    }
+    .label-subscribe{
+        width: 100%;
+        margin: 0 0 16px 0;
     }
     .input-footer{
         width: 100%;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px)
