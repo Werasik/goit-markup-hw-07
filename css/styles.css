@@ -369,7 +369,7 @@ height: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* section5 */
-/* .section-five {
+.section-five {
     padding: 120px 0;
 }
 
@@ -402,8 +402,7 @@ height: 16px;
 .icon-section-five {
     width: 104px;
     height: 56px;
-}  */
-
+} 
 /* footer */
 /* footer {
     background-color: var(--navy-blue);
@@ -918,7 +917,7 @@ height: 12px;
     .section-four{
         padding: 96px 0;
     }
-    .section-four .section-title{
+    .section-title{
         margin-bottom: 72px;
     }
     .section-four-list{
@@ -935,5 +934,28 @@ height: 12px;
     .section-four-item:not(:last-child){
         margin-right: 0;
         margin-bottom: 72px;
+    }
+    /* section5 */
+    .section-five{
+        padding: 96px 0;
+    }
+    .icon-list-section-five{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icon-item-section-five{
+        width: 190px;
+    }
+    .icon-item-section-five:nth-child(-n+4){
+        margin-bottom: 72px;
+    }
+    .icon-item-section-five:not(:last-child){
+        margin-right: 0;
+    }
+    .icon-item-section-five:nth-child(odd){
+        margin-right: 16px;
+    }
+    .icon-link-section-five{
+    width: 190px;
     }
 }
