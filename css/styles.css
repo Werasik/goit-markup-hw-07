@@ -214,21 +214,31 @@ header {
 }
 
 .container-links-menu {
-    margin-bottom: 284px;
     display: flex;
     flex-direction: column;
+    row-gap: 40px;
 }
-
-.container-link-menu:not(:last-child) {
-    margin-bottom: 40px;
+.header-modal-menu-wrapper{
+    position: absolute;
+    bottom: 40px;
+    width: 369px;
 }
-
+.container-contact-menu{
+    margin-bottom: 48px;
+}
 .container-contact-menu:nth-child(1) {
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;
+    margin-bottom: 40px;
 }
-
+.contact-a{
+    color: var(--slate);
+    display: block;
+}
+.contact-a:active{
+    color: var(--iris);
+}
 .container-contact-menu:nth-child(2) {
     font-weight: 600;
     font-size: 20px;
@@ -237,9 +247,14 @@ header {
 
 .icon-list-modal-menu {
     display: flex;
-    justify-content: space-between;
+    column-gap: 56px;
 }
-
+.icon-item-modal-menu a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--iris);
+}
 /* main */
 /* section1 */
 .section-one {
@@ -369,6 +384,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    column-gap: 24px;
 }
 
 .section-four-content p {
@@ -378,10 +394,6 @@ header {
 .icon-section-four {
     width: 16px;
     height: 16px;
-}
-
-.icon-item-section-four:not(:last-child) {
-    margin-right: 24px;
 }
 
 .section-four-item {
